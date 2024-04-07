@@ -1,0 +1,22 @@
+{
+    "members": [
+      {
+        "name": "Honda Motor Scooters",
+        "descripcion": "The Honda's Scooters is a nimble and efficient scooter, perfect for urban commutes. With a 150cc engine, disc brakes, and storage space, it provides a safe and comfortable ride in the city.",
+        "image": "https://w7.pngwing.com/pngs/500/352/png-transparent-honda-pcx-motorcycle-scooter-west-hills-honda-honda-scooter-car-vehicle.png",
+        "membership level": " 1 "
+      },
+      {
+        "name": "Side-by-Side ATVs",
+        "descripcion": "Side-by-Side ATVs are rugged off-road vehicles designed for multiple passengers. With powerful engines and durable construction, they excel in navigating challenging terrain for recreational adventures and work applications. Ideal for outdoor exploration and hauling cargo, they offer reliability and versatility for off-road activities.",
+        "image": "https://w7.pngwing.com/pngs/1000/904/png-transparent-side-by-side-polaris-rzr-polaris-industries-all-terrain-vehicle-moto-united-bellflower-yamaha-polaris-suzuki-polaris-rzr-thumbnail.png",
+        "membership level": " 2 "
+      },
+      {
+        "name": "Jeeps",
+        "descripcion": "The Jeep: an iconic off-road vehicle renowned for its rugged design and unmatched capability. With four-wheel drive, powerful engines, and durable construction, it's the ultimate choice for outdoor adventures.",
+        "image": "https://e7.pngegg.com/pngimages/48/947/png-clipart-2018-jeep-wrangler-jk-2007-jeep-wrangler-x-car-sport-utility-vehicle-jeep-car-off-road-vehicle.png",
+        "membership level": " 3 "
+      }
+    ]
+  }
