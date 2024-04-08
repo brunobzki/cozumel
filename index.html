@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get to know the wonderful island of Cozumel quickly and efficiently with our vehicles">
+    <meta name="author" content="Bruno Panzacchi">
+    <meta property="og:title" content="Cuzumel on wheels" />
+    <meta property="og:type" content="Local market web page" />
+    <meta property="og:url" content="https://brunobzki.github.io/cozumel/" />
+    <meta property="og:image" content="https://www.turismomexico.es/wp-content/uploads/2023/01/faro_cozumel.jpg" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js"></script>
+
+
+    <title> Home page Cozumel on Wheels</title>
+</head>
+
+<body>
+    <video src="images/cuzomel.mp4" autoplay loop muted poster="images/Cozumel.png"></video>
+    <div id="content">
+        <header>
+
+            <img class="logo" src="images/descarga.jfif" alt="logo page">
+
+
+            <button id="menu"></button>
+            <img src="images/cozumel-text.png" alt="title" id="titulo">
+            <nav class="navigation">
+
+                <ul>
+                    <li><a href="index.html" class="active"> Home</a></li>
+                    <li><a href="discover.html"> Discover </a></li>
+                    <li><a href="directory.html"> Directory </a></li>
+                    <li><a href="calendar.html"> Calendar </a></li>
+                </ul>
+            </nav>
+            <div id="mode">
+                🕶️
+            </div>
+        </header>
+        <hr>
+        <main>
+            <h1>Cozumel Wheels renta a car</h1>
+            <div class='button-box'>
+                <a class='rent' href="reservation.html">Rent Now!!!</a>
+
+            </div>
+            <div id="hometext">
+                <p>""Welcome to Cozumel, where adventure awaits at every turn! Embark on a journey of discovery and
+                    freedom as you explore the wonders of this captivating island paradise with our premier vehicle
+                    rental services. Whether you're craving the exhilarating rush of wind in your hair as you cruise
+                    along coastal roads or seeking to uncover the island's best-kept secrets tucked away in its lush
+                    jungles, our extensive fleet of reliable and well-maintained vehicles is at your disposal.
+
+                    From sleek convertibles perfect for soaking up the sun to rugged jeeps ready to tackle off-road
+                    trails, we have the ideal vehicle to suit your preferences and needs. Take control of your island
+                    experience and create lasting memories as you traverse Cozumel's diverse landscapes, from pristine
+                    beaches and vibrant coral reefs to historic sites and charming local villages.
+
+                    With our convenient booking process and flexible rental options, planning your Cozumel adventure has
+                    never been easier. Whether you're here for a day trip or an extended stay, our dedicated team is
+                    committed to providing you with exceptional service and ensuring that your exploration of Cozumel is
+                    nothing short of extraordinary.
+
+                    Get ready to immerse yourself in the natural beauty and rich culture of Cozumel – the ultimate
+                    destination for unforgettable adventures. Let the journey begin!""</p>
+            </div>
+            <section>
+                <div id="banner" style="display: none;">
+                    <p>Welcome tourists!<br>Today's maximum temperature:
+                    <div class="maxtemp"></div>Please be careful with the UV rays.</p>
+                    <button id="closeBanner">Close</button>
+                </div>
+            </section>
+            <div class="vehicles">
+                <div class="menud">
+                    <h2>About our Vehicles</h2>
+                    <button id="grida">😃 See</button>
+                    <button id="lista">😄 Hide</button>
+                </div>
+                <hr>
+                <article class="grida" id="cards">
+
+                </article>
+                <input type="hidden" id="timestamp">
+            </div>
+            <div class="information">
+                <div class="weather">
+                    <h2>Weather information</h2>
+
+                    <div id="weatherInfo"></div>
+                    <div id="windchill"></div>
+                    <div id="forecast-container"></div>
+                </div>
+                <div id="map"></div>
+            </div>
+
+        </main>
+        <footer>
+            <p id="footerFirstParagraph"></p>
+            <p id="lastModified"></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/face1.webp" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta.webp" alt="instagram icon">
+                </a>
+                <a href="https://maps.app.goo.gl/X5zEjQ8bBL8tUt8A6" target="_blank">
+                    <img src="images/ubica.webp" alt="Location icon">
+                </a>
+            </div>
+        </footer>
+        <script src="script/footer.js"></script>
+        <script src="data/type.js"></script>
+        <script src="script/weather.js"></script>
+        <script src="script/banner.js"></script>
+    </div>
+</body>
+
+</html>
