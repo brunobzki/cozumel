@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <video src="images/cuzomel.mp4" autoplay loop muted poster="images/Cozumel.png"></video>
+
     <div id="content">
         <header>
 
@@ -32,10 +32,11 @@
             <nav class="navigation">
 
                 <ul>
-                    <li><a href="index.html" class="active"> Home</a></li>
-                    <li><a href="discover.html"> Discover </a></li>
-                    <li><a href="directory.html"> Directory </a></li>
-                    <li><a href="calendar.html"> Calendar </a></li>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="rentals.html"> Rentals </a></li>
+                    <li><a href="reservation.html" class="active"> Reservations </a></li>
+                    <li><a href="explore.html"> Explore Cozumel</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
                 </ul>
             </nav>
             <div id="mode">
@@ -44,15 +45,80 @@
         </header>
         <hr>
         <main>
-            <h1>Cozumel Wheels renta a car</h1>
-           
+            <div class="containers">
+                <h1>Reservation</h1>
+                <h2>Vehicle selected:</h2>
+                <div id="vehicle-image-container">
+                    <img id="vehicle-image" src="" alt="Vehicle Image">
+                </div>
+                <hr>
+                <h2>Fill out the form below to make a reservation:</h2>
+                <form id="reservation-form" action="thanks.html" method="post">
+
+
+                    <fieldset class="formu">
+
+                        <label for="rental-type">Rental Type:</label>
+                        <select name="rental-type" id="rental-type"></select>
+                        <br>
+                        <label for="pickup-date">Pickup Date:</label>
+                        <input type="date" id="pickup-date" name="pickup-date" required>
+                        <br>
+                        <label for="pickup-time">Pickup Time:</label>
+                        <input type="time" id="pickup-time" name="pickup-time" required>
+                        <br>
+                        <label for="duration">Duration (in hours):</label>
+                        <input type="number" id="duration" name="duration" min="1" required>
+                        <br>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                        <br>
+                    </fieldset>
+                    <fieldset class="formu">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                        <br>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            placeholder="Format: 123-456-7890" required>
+                        <br>
+                        <label for="country">Country/State of Origin:</label required>
+                        <input type="text" id="country" name="country">
+                        <br>
+                        <label for="cruise-line">Cruise Line (if applicable):</label>
+                        <input type="text" id="cruise-line" name="cruise-line">
+                        <br>
+                        <label for="accommodations">Accommodations/Comments:</label>
+                        <textarea id="accommodations" name="accommodations"></textarea>
+                        <br>
+                    </fieldset>
+                </form>
+                <div id="confirm">
+                    <input type="submit" value="Submit Reservation" id="reservation">
+                </div>
+
+            </div>
         </main>
         <footer>
             <p id="footerFirstParagraph"></p>
             <p id="lastModified"></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/face1.webp" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta.webp" alt="instagram icon">
+                </a>
+                <a href="https://maps.app.goo.gl/X5zEjQ8bBL8tUt8A6" target="_blank">
+                    <img src="images/ubica.webp" alt="Location icon">
+                </a>
+            </div>
         </footer>
         <script src="script/footer.js"></script>
-        <script src="data/type.js"></script>
+        <script src="script/image.js"></script>
     </div>
 </body>
 

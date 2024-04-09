@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get to know the wonderful island of Cozumel quickly and efficiently with our vehicles">
+    <meta name="author" content="Bruno Panzacchi">
+    <meta property="og:title" content="Cuzumel on wheels" />
+    <meta property="og:type" content="Local market web page" />
+    <meta property="og:url" content="https://brunobzki.github.io/cozumel/" />
+    <meta property="og:image" content="https://www.turismomexico.es/wp-content/uploads/2023/01/faro_cozumel.jpg" />
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+
+    <title> Home page Cozumel on Wheels</title>
+</head>
+
+<body>
+
+    <div id="content">
+        <header>
+
+            <img class="logo" src="images/descarga.jfif" alt="logo page">
+
+
+            <button id="menu"></button>
+            <img src="images/cozumel-text.png" alt="title" id="titulo">
+            <nav class="navigation">
+
+                <ul>
+                    <li><a href="index.html" class="active"> Home</a></li>
+                    <li><a href="rentals.html"> Rentals </a></li>
+                    <li><a href="reservation.html"> Reservations </a></li>
+                    <li><a href="explore.html"> Explore Cozumel</a></li>
+                    <li><a href="contact.html"> Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="mode">
+                🕶️
+            </div>
+        </header>
+        <hr>
+        <main>
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Have a question or feedback? Fill out the form below and we'll get back to you as soon as possible.
+                </p>
+                <div id="feedback"></div>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" required>
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" required>
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message" required></textarea>
+                        </li>
+                        <div id="confirm">
+                            <li class="button">
+                                <button type="submit" id="reservation">Send your message</button>
+                            </li>
+                        </div>
+                    </ul>
+                </form>
+                <hr>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.720301575515!2d-86.94226964999999!3d20.512066299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sCozumel%2C%20Q.R.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2suy!4v1712623772022!5m2!1ses-419!2suy"
+                    width="100%" height="450" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </main>
+        <footer>
+            <p id="footerFirstParagraph"></p>
+            <p id="lastModified"></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/face1.webp" alt="fb icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/insta.webp" alt="instagram icon">
+                </a>
+                <a href="https://maps.app.goo.gl/X5zEjQ8bBL8tUt8A6" target="_blank">
+                    <img src="images/ubica.webp" alt="Location icon">
+                </a>
+            </div>
+        </footer>
+        <script src="script/footer.js"></script>
+        <script src="script/contact.js"></script>
+    </div>
+</body>
+
+</html>

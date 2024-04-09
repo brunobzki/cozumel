@@ -97,7 +97,7 @@ a.rent{
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     width: auto;
-    grid-column: 2/3;
+    grid-column: 1/3;
 }
 .active::before {
 	content: "🏝"; 
@@ -131,8 +131,8 @@ a {
     text-decoration: none;
     font-family: var(--heading-font);
     font-weight: bold;
-    padding:  0 30px 0 30px;
-    color: #ec7c84;
+    padding:  0 10px 0 ;
+    color: #f55516;
     font-size: 36px;
     text-align: center;
     
@@ -295,22 +295,17 @@ footer {
     margin-top: 50px;
 }
 footer .social img {
-    padding: 10px 10px;
-    padding-bottom: 0;
-    width: 70px;
     height: 50px;
-    
 }
 /*banner*/
-#closeBanner {
+#closeBanner, #reservation {
     background-image: linear-gradient(#f5b055, #f73e3e);
     border-radius: 20px;
     text-align: center;
     padding: 18px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    
     color: #000;
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
     font-size: 25px;
     font-weight: 600;
 }
@@ -340,4 +335,212 @@ section{
 }
 #banner p {
     margin: 5px;
+}
+/*rentals page*/
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th{
+    font-size: 30px;
+    font-family: var(--heading-font);
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px;
+}
+td{
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: center;
+}
+
+thead {
+    background-color: #98f72ba2;
+}
+.vehicle-image img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+.vehicle-image img:hover {
+    transform: scale(5); 
+    z-index: 1;
+}
+#vehicle-image-container{
+    height: 200px;
+    width: 100%;
+}
+
+/*reservation page*/
+label{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--paragraph-font);
+    
+}
+.containers{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    display: grid;
+    justify-content: center;
+    
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
+}
+#vehicle-image-container{
+    display: flex;
+    justify-content: center;
+}
+.formu{
+    display: grid;
+    justify-content: center;
+}
+.container h2{
+    text-align: center;
+}
+input:required {
+    border-bottom: solid 4px red ;
+}
+input,select{
+    border-radius: 5px;
+    border:solid 2px black;
+}
+select.p{
+    font-family: var(--paragraph-font);
+}
+fieldset{
+    box-shadow: 0 0 20px inset rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+#confirm{
+    text-align: center;
+    margin: 20px 0 10px;
+}
+/*contac us*/
+.container form{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+}
+textarea {
+    overflow: auto;
+    height: 80px;
+}
+form ul li{
+    list-style: none;
+    display: grid;
+}
+#feedback{
+    box-shadow: 0px 0px 10px rgba(90, 248, 28, 0.329);
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+    text-align: center;
+    background-color: #0dbd3694;
+    padding: 3%;
+    border-radius: 20px;
+}
+.mapa{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 650px;
+    height: 500px;
+    
+}
+iframe {
+    width:100% ;
+}
+.moveDown {
+    margin-top: 3em;
+}
+/*explore*/
+.hero {
+    width: 100%;
+
+    height: auto;
+    overflow: hidden;
+}
+img{
+    animation: fade 8s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main.page-explore {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+}
+.Info {
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+}
+
+.Info img {
+    float: left;
+    margin-right: 20px;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    max-width: 400px;
+
+}
+
+.saturate:hover {
+    box-shadow: 0 0 50px #333;
+}
+.saturate {
+    filter: saturate(50%);
+    width: 30%;
+}
+.data{
+    background-color: #a9a9a952;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.photo img {
+    margin: 20px 0 20px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
 }

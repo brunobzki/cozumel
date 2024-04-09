@@ -24,7 +24,7 @@ function displayMembers(members) {
     const memberInfo = document.createElement('ul');
     const memberImage = document.createElement('img');
 
-    memberTitle.textContent = `${member.name} - Driver's license Level ${member}`;
+    memberTitle.textContent = `${member.name} - Driver's license Level ${member["membership level"]}`;
 
     memberImage.src = `${member.image}`;
     memberImage.alt = `${member.name} Image`;
@@ -32,8 +32,6 @@ function displayMembers(members) {
 
     const memberDetails = [
       `Description: ${member.descripcion}`,
-      
-
     ];
 
     memberDetails.forEach((detail) => {
