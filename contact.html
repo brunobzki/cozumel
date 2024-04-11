@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
 
-    <title> Home page Cozumel on Wheels</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
@@ -32,11 +32,11 @@
             <nav class="navigation">
 
                 <ul>
-                    <li><a href="index.html" class="active"> Home</a></li>
+                    <li><a href="index.html"> Home</a></li>
                     <li><a href="rentals.html"> Rentals </a></li>
                     <li><a href="reservation.html"> Reservations </a></li>
                     <li><a href="explore.html"> Explore Cozumel</a></li>
-                    <li><a href="contact.html"> Contact Us</a></li>
+                    <li><a href="contact.html" class="active"> Contact Us</a></li>
                 </ul>
             </nav>
             <div id="mode">
@@ -50,7 +50,7 @@
                 <p>Have a question or feedback? Fill out the form below and we'll get back to you as soon as possible.
                 </p>
                 <div id="feedback"></div>
-                <form action="/my-handling-form-page" method="post">
+                <form action="/my-handling-form-page" method="get">
                     <ul>
                         <li>
                             <label for="name">Name:</label>
@@ -64,12 +64,13 @@
                             <label for="msg">Message:</label>
                             <textarea id="msg" name="user_message" required></textarea>
                         </li>
-                        <div id="confirm">
-                            <li class="button">
-                                <button type="submit" id="reservation">Send your message</button>
-                            </li>
-                        </div>
+
                     </ul>
+                    <div id="confirm">
+                        <li class="button">
+                            <button type="submit" id="reservation">Send your message</button>
+                        </li>
+                    </div>
                 </form>
                 <hr>
 
@@ -97,6 +98,9 @@
         </footer>
         <script src="script/footer.js"></script>
         <script src="script/contact.js"></script>
+        <script src="script/darkmode.js"></script>
+        <script src="script/hamenu.js"></script>
+
     </div>
 </body>
 

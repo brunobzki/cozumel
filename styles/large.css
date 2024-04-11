@@ -1,0 +1,134 @@
+@media  (max-width: 639px){
+    
+
+    .navigation.open  {
+        
+        
+        display:flex ;
+        margin-top: 50px;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+
+        
+    }
+    header {
+        
+        grid-template-columns: 1fr;
+
+    }
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        height: 200px; 
+        text-align: center;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+        flex-direction: column;
+    }
+    a {
+        height: 25px;
+        text-decoration: none;
+        font-family: var(--heading-font);
+        font-weight: bold;
+        padding:  0 10px 0 ;
+        color: #f55516;
+        font-size: 25px;
+        text-align: left;
+        
+    }
+    .navigation{
+        display: none;
+        grid-column: 1/1;
+    }
+    #menu {
+        font-size: 3rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: relative;
+        display: inline;
+       
+    }
+    h1{
+        font-size: 60px;
+    }
+    p{
+        font-size: 15px;
+    }
+    ul{
+        padding: 0%;
+    }
+    .vehicles li{
+        background-color: white;
+    }
+    footer {
+        box-shadow: 0 0 10px #333;
+        border-radius: 10px;
+        min-height: 30px;
+        display: contents;
+        margin-top: 50px;
+        text-align: center;
+    }
+    .social {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    footer .social img{
+        height: 40px;
+    }
+    
+    main.page-explore {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr;
+        
+    }
+    .vehicles ul {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .information{
+        display: contents;
+        
+    }
+    .weather{
+        margin-bottom: 10px;
+    }
+    form{
+        grid-template-columns: 1fr;
+        margin-bottom: 15px;
+    }
+    #vehicle-image-container{
+        max-width: 400px;
+    }
+    th, td {
+        padding: 0;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border-radius: 10px;
+    }
+    td{
+        font-family: var(--paragraph-font);
+        font-size: 10px;
+        text-align: center;
+    }
+    th{
+        font-size: 15px;
+        font-family: var(--heading-font);
+    }
+    .container {
+        
+        margin: 0 ;
+        padding: 0;
+    } 
+    .vehicle-image img:hover {
+        transform: scale(3)translateX(20px);; 
+        z-index: 1;
+        float: right;
+    }
+}

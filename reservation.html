@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
 
-    <title> Home page Cozumel on Wheels</title>
+    <title>Reservation</title>
 </head>
 
 <body>
@@ -53,7 +53,7 @@
                 </div>
                 <hr>
                 <h2>Fill out the form below to make a reservation:</h2>
-                <form id="reservation-form" action="thanks.html" method="post">
+                <form id="reservation-form" action="thanks.html" method="get">
 
 
                     <fieldset class="formu">
@@ -82,7 +82,7 @@
                         <input type="email" id="email" name="email">
                         <br>
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        <input type="tel" id="phone" name="phone" 
                             placeholder="Format: 123-456-7890" required>
                         <br>
                         <label for="country">Country/State of Origin:</label required>
@@ -95,10 +95,12 @@
                         <textarea id="accommodations" name="accommodations"></textarea>
                         <br>
                     </fieldset>
-                </form>
+                
+                
                 <div id="confirm">
                     <input type="submit" value="Submit Reservation" id="reservation">
                 </div>
+            </form>
 
             </div>
         </main>
@@ -119,6 +121,9 @@
         </footer>
         <script src="script/footer.js"></script>
         <script src="script/image.js"></script>
+        <script src="script/darkmode.js"></script>
+        <script src="script/hamenu.js"></script>
+        <script src="script/submit.js"></script>
     </div>
 </body>
 
