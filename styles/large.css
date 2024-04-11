@@ -2,15 +2,13 @@
     
 
     .navigation.open  {
-        
-        
         display:flex ;
         margin-top: 50px;
         border-radius: 20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    
-
-        
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    }
+    #content{
+        text-align: center;
     }
     header {
         
@@ -100,7 +98,7 @@
         margin-bottom: 10px;
     }
     form{
-        grid-template-columns: 1fr;
+        display: inline;
         margin-bottom: 15px;
     }
     #vehicle-image-container{

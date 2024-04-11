@@ -31,6 +31,8 @@ img.logo {
     background-blend-mode: color;
     padding: 0;
     margin: 0 auto;
+    display: grid;
+    justify-content: space-around;
 
 }
 #titulo{
@@ -61,6 +63,13 @@ h1 {
     font-family: var(--heading-font);
     color: gold;
     margin: 15px;
+    position: relative;
+    z-index: 1;
+    
+}
+#herotext{
+    background-image: radial-gradient(#000000cc,#0de72a);
+    border-radius: 50px;
 }
 .button-box{
     display: grid;
@@ -154,15 +163,11 @@ h2{
 
     color: #f1082b;
     display:inline-table ;
-    transform: scale(1.2);
-    border-radius: 5px;
-    border:  2px #f5f240;
-    
+    transform: scale(1.1);
+    border-radius: 15px;
+    border: solid  2px #ff6905c2;
     box-shadow: 0 0 50px #f7e92f;
-    border: solid 2px #f5f240;
     
-    
-
 }
 
 .vehicles {
@@ -340,7 +345,10 @@ section{
     padding: 20px;
     
 }
-
+#terms{
+    font-family: var(--paragraph-font);
+    font-size: 20px;
+}
 
 table {
     width: 100%;
@@ -428,6 +436,7 @@ select.p{
 fieldset{
     box-shadow: 0 0 20px inset rgba(0, 0, 0, 0.5);
     border-radius: 20px;
+    margin: 15px;
 }
 #confirm{
     text-align: center;
@@ -475,9 +484,10 @@ iframe {
 /*explore*/
 .hero {
     width: 100%;
-
+    margin-top: -150px;
     height: auto;
     overflow: hidden;
+    z-index: -1;
 }
 img{
     animation: fade 8s;
@@ -497,12 +507,14 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 main.page-explore {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
+    max-width: 1095px;
 }
 .Info {
     position: relative;
@@ -513,6 +525,7 @@ main.page-explore {
     
 }
 
+
 .Info img {
     float: left;
     margin-right: 20px;
@@ -521,6 +534,9 @@ main.page-explore {
     border-radius: 20px;
     max-width: 400px;
 
+}
+.photo{
+    max-width: 516px;
 }
 
 .saturate:hover {

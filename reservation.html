@@ -21,29 +21,30 @@
 
 <body>
 
+
+    <header>
+
+        <img class="logo" src="images/descarga.jfif" alt="logo page">
+
+
+        <button id="menu"></button>
+        <img src="images/cozumel-text.png" alt="title" id="titulo">
+        <nav class="navigation">
+
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="rentals.html"> Rentals </a></li>
+                <li><a href="reservation.html" class="active"> Reservations </a></li>
+                <li><a href="explore.html"> Explore Cozumel</a></li>
+                <li><a href="contact.html"> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="mode">
+            🕶️
+        </div>
+    </header>
+    <hr>
     <div id="content">
-        <header>
-
-            <img class="logo" src="images/descarga.jfif" alt="logo page">
-
-
-            <button id="menu"></button>
-            <img src="images/cozumel-text.png" alt="title" id="titulo">
-            <nav class="navigation">
-
-                <ul>
-                    <li><a href="index.html"> Home</a></li>
-                    <li><a href="rentals.html"> Rentals </a></li>
-                    <li><a href="reservation.html" class="active"> Reservations </a></li>
-                    <li><a href="explore.html"> Explore Cozumel</a></li>
-                    <li><a href="contact.html"> Contact Us</a></li>
-                </ul>
-            </nav>
-            <div id="mode">
-                🕶️
-            </div>
-        </header>
-        <hr>
         <main>
             <div class="containers">
                 <h1>Reservation</h1>
@@ -82,11 +83,10 @@
                         <input type="email" id="email" name="email">
                         <br>
                         <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" 
-                            placeholder="Format: 123-456-7890" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Format: 123-456-7890" required>
                         <br>
-                        <label for="country">Country/State of Origin:</label required>
-                        <input type="text" id="country" name="country">
+                        <label for="country">Country/State of Origin:</label>
+                        <input type="text" id="country" name="country" required>
                         <br>
                         <label for="cruise-line">Cruise Line (if applicable):</label>
                         <input type="text" id="cruise-line" name="cruise-line">
@@ -95,12 +95,12 @@
                         <textarea id="accommodations" name="accommodations"></textarea>
                         <br>
                     </fieldset>
-                
-                
-                <div id="confirm">
-                    <input type="submit" value="Submit Reservation" id="reservation">
-                </div>
-            </form>
+
+
+                    <div id="confirm">
+                        <input type="submit" value="Submit Reservation" id="reservation">
+                    </div>
+                </form>
 
             </div>
         </main>

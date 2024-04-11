@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <video src="" autoplay loop muted poster="images/Cozumel.webp" loading="lazy"></video>
+
     <div id="content">
         <header>
 
@@ -39,15 +39,24 @@
                     <li><a href="contact.html"> Contact Us</a></li>
                 </ul>
             </nav>
-            
+
         </header>
         <hr>
+
         <main>
-            <h1>Thanks for your reservation, we are waiting you.</h1>
+
+            <h1 id="herotext">Thanks for your reservation, we are waiting you.</h1>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/small" media="(max-width: 300px)">
+                    <source srcset="images/medium.webp" media="(max-width: 800px)">
+                    <img src="images/landport.webp" alt="hero picture" width="1278">
+                </picture>
+            </div>
             <div class='button-box'>
                 <a class='rent' href="index.html">Go to Home Page</a>
             </div>
-            
+
 
         </main>
         <footer>
